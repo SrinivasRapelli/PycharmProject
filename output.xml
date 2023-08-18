@@ -1,105 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230817 22:15:45.245" rpa="false" schemaversion="4">
-<suite id="s1" name="PracticingRadioButtonAndCheckboxes" source="C:\Users\srini\PycharmProjects\RobotFramework\Automation\PracticingRadioButtonAndCheckboxes.robot">
-<test id="s1-t1" name="clicking the radio button" line="8">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230818 13:35:27.278" rpa="false" schemaversion="4">
+<suite id="s1" name="Alerts" source="C:\Users\srini\PycharmProjects\RobotFramework\Automation\Alerts.robot">
+<test id="s1-t1" name="alertShouldBePresent" line="11">
+<kw name="alertHandles2">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>https://demoqa.com/alerts</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230817 22:15:45.473" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
-<status status="PASS" starttime="20230817 22:15:45.472" endtime="20230817 22:16:01.065"/>
+<msg timestamp="20230818 13:35:27.456" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/alerts'.</msg>
+<status status="PASS" starttime="20230818 13:35:27.456" endtime="20230818 13:35:46.015"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230817 22:16:01.065" endtime="20230817 22:16:01.194"/>
+<status status="PASS" starttime="20230818 13:35:46.015" endtime="20230818 13:35:46.138"/>
 </kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>1</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230817 22:16:01.194" endtime="20230817 22:16:01.194"/>
-</kw>
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>sex</arg>
-<arg>Male</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20230817 22:16:01.195" level="INFO">Selecting 'Male' from radio button 'sex'.</msg>
-<status status="PASS" starttime="20230817 22:16:01.195" endtime="20230817 22:16:04.315"/>
-</kw>
-<kw name="Select Radio Button" library="SeleniumLibrary">
-<arg>exp</arg>
+<kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20230817 22:16:04.317" level="INFO">Selecting '2' from radio button 'exp'.</msg>
-<status status="PASS" starttime="20230817 22:16:04.316" endtime="20230817 22:16:07.388"/>
-</kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>profession</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20230817 22:16:07.390" level="INFO">Selecting checkbox 'profession'.</msg>
-<status status="PASS" starttime="20230817 22:16:07.389" endtime="20230817 22:16:11.459"/>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 13:35:48.139" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230818 13:35:46.138" endtime="20230818 13:35:48.139"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:(//*[@name="profession"])[2]</arg>
+<arg>id=confirmButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230817 22:16:11.473" level="INFO">Clicking element 'xpath:(//*[@name="profession"])[2]'.</msg>
-<status status="PASS" starttime="20230817 22:16:11.472" endtime="20230817 22:16:13.550"/>
+<msg timestamp="20230818 13:35:48.142" level="INFO">Clicking element 'id=confirmButton'.</msg>
+<status status="PASS" starttime="20230818 13:35:48.140" endtime="20230818 13:35:48.202"/>
 </kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>name=continents</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 13:35:50.204" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230818 13:35:48.203" endtime="20230818 13:35:50.204"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>Do you confirm action?</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20230818 13:35:50.205" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230818 13:35:50.204" endtime="20230818 13:35:50.210"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20230817 22:16:13.560" level="INFO">Selecting options from selection list 'name=continents' by index 3.</msg>
-<status status="PASS" starttime="20230817 22:16:13.559" endtime="20230817 22:16:25.902"/>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 13:35:53.210" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230818 13:35:50.210" endtime="20230818 13:35:53.210"/>
 </kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>name=selenium_commands</arg>
-<arg>4</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20230817 22:16:25.903" level="INFO">Selecting options from selection list 'name=selenium_commands' by index 4.</msg>
-<status status="PASS" starttime="20230817 22:16:25.902" endtime="20230817 22:16:39.183"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${msg}</var>
+<arg>id=confirmResult</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230818 13:35:53.237" level="INFO">${msg} = You selected Ok</msg>
+<status status="PASS" starttime="20230818 13:35:53.210" endtime="20230818 13:35:53.237"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 13:35:55.238" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230818 13:35:53.237" endtime="20230818 13:35:55.238"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${msg}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230818 13:35:55.238" endtime="20230818 13:35:55.238"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 13:35:58.238" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230818 13:35:55.238" endtime="20230818 13:35:58.238"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>name=submit</arg>
+<arg>id=confirmButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230817 22:16:39.184" level="INFO">Clicking element 'name=submit'.</msg>
-<status status="PASS" starttime="20230817 22:16:39.183" endtime="20230817 22:16:41.286"/>
+<msg timestamp="20230818 13:35:58.238" level="INFO">Clicking element 'id=confirmButton'.</msg>
+<status status="PASS" starttime="20230818 13:35:58.238" endtime="20230818 13:35:58.270"/>
 </kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
-<arg>dismiss</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20230817 22:16:41.289" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20230817 22:16:41.287" endtime="20230817 22:16:44.302"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230818 13:36:00.272" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230818 13:35:58.271" endtime="20230818 13:36:00.272"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>name=submit</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230817 22:16:44.305" level="INFO">Clicking element 'name=submit'.</msg>
-<status status="PASS" starttime="20230817 22:16:44.303" endtime="20230817 22:16:46.384"/>
+<kw name="Alert Should Not Be Present" library="SeleniumLibrary">
+<arg>Do you confirm action?</arg>
+<doc>Verifies that no alert is present.</doc>
+<msg timestamp="20230818 13:36:00.278" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Alert Text: Do you confirm action?
+Message: unexpected alert open: {Alert text : Do you confirm action?}
+  (Session info: chrome=116.0.5845.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7290952A2+57122]
+	(No symbol) [0x00007FF72900EA92]
+	(No symbol) [0x00007FF728EDE3AB]
+	(No symbol) [0x00007FF728F4EDC2]
+	(No symbol) [0x00007FF728F36DB3]
+	(No symbol) [0x00007FF728F0D2B1]
+	(No symbol) [0x00007FF728F0E494]
+	GetHandleVerifier [0x00007FF72933EF82+2849794]
+	GetHandleVerifier [0x00007FF729391D24+3189156]
+	GetHandleVerifier [0x00007FF72938ACAF+3160367]
+	GetHandleVerifier [0x00007FF729126D06+653702]
+	(No symbol) [0x00007FF72901A208]
+	(No symbol) [0x00007FF7290162C4]
+	(No symbol) [0x00007FF7290163F6]
+	(No symbol) [0x00007FF7290067A3]
+	BaseThreadInitThunk [0x00007FF9148826AD+29]
+	RtlUserThreadStart [0x00007FF914ECAA68+40]
+</msg>
+<msg timestamp="20230818 13:36:00.279" level="FAIL">ValueError: Invalid alert action 'DO YOU CONFIRM ACTION?'.</msg>
+<status status="FAIL" starttime="20230818 13:36:00.272" endtime="20230818 13:36:00.280"/>
 </kw>
-<kw name="Handle Alert" library="SeleniumLibrary">
-<arg>accept</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20230817 22:16:46.385" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20230817 22:16:46.384" endtime="20230817 22:16:49.394"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230818 13:36:00.281" endtime="20230818 13:36:00.281"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${msg2}</var>
+<arg>id=confirmResult</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230818 13:36:00.281" endtime="20230818 13:36:00.281"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230818 13:36:00.281" endtime="20230818 13:36:00.281"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${msg2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230818 13:36:00.281" endtime="20230818 13:36:00.281"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230817 22:16:49.394" endtime="20230817 22:16:53.149"/>
+<status status="NOT RUN" starttime="20230818 13:36:00.281" endtime="20230818 13:36:00.281"/>
 </kw>
-<status status="PASS" starttime="20230817 22:15:45.472" endtime="20230817 22:16:53.153"/>
+<status status="FAIL" starttime="20230818 13:35:27.456" endtime="20230818 13:36:00.281"/>
+</kw>
+<status status="FAIL" starttime="20230818 13:35:27.455" endtime="20230818 13:36:00.282">ValueError: Invalid alert action 'DO YOU CONFIRM ACTION?'.</status>
 </test>
-<status status="PASS" starttime="20230817 22:15:45.246" endtime="20230817 22:16:53.157"/>
+<status status="FAIL" starttime="20230818 13:35:27.279" endtime="20230818 13:36:00.285"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="PracticingRadioButtonAndCheckboxes">PracticingRadioButtonAndCheckboxes</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Alerts">Alerts</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230818 13:36:00.278" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Alert Text: Do you confirm action?
+Message: unexpected alert open: {Alert text : Do you confirm action?}
+  (Session info: chrome=116.0.5845.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7290952A2+57122]
+	(No symbol) [0x00007FF72900EA92]
+	(No symbol) [0x00007FF728EDE3AB]
+	(No symbol) [0x00007FF728F4EDC2]
+	(No symbol) [0x00007FF728F36DB3]
+	(No symbol) [0x00007FF728F0D2B1]
+	(No symbol) [0x00007FF728F0E494]
+	GetHandleVerifier [0x00007FF72933EF82+2849794]
+	GetHandleVerifier [0x00007FF729391D24+3189156]
+	GetHandleVerifier [0x00007FF72938ACAF+3160367]
+	GetHandleVerifier [0x00007FF729126D06+653702]
+	(No symbol) [0x00007FF72901A208]
+	(No symbol) [0x00007FF7290162C4]
+	(No symbol) [0x00007FF7290163F6]
+	(No symbol) [0x00007FF7290067A3]
+	BaseThreadInitThunk [0x00007FF9148826AD+29]
+	RtlUserThreadStart [0x00007FF914ECAA68+40]
+</msg>
 </errors>
 </robot>

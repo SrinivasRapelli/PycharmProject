@@ -15,14 +15,18 @@ clicking the radio button
     Select Radio Button     exp     2
     Select Checkbox         profession
     click element       xpath:(//*[@name="profession"])[2]
-    Select from List by Index       name=continents     3
+#    Handling dropDowns
+    Select from List by Label       name=continents     Africa
+#    Handling List Boxes
     Select from List by Index       name=selenium_commands      4
     click element       name=submit
+#    Handling Alerts
     Handle alert        dismiss
 
     click element       name=submit
-    Handle alert        accept
 
+    Handle alert        accept
+    sleep   5
     close browser
 *** Keywords ***
 
