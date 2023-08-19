@@ -50,3 +50,12 @@
 30  Select Radio Button  <name>     <radioButton name>  
 # Selecting Checkbox
 31  Select Checkbox     <name>
+
+# Data extraction from tables
+32  ${variable}   get element count    <locator>      # to count the row and tables
+33  ${variable}   get text    <locator>   
+
+# Validation actions on html table
+
+34 table column should contain    <locator>     <no.of the column>   <columnData>
+35 table row should contain      <locator>      <no.of the row>   <row data>
