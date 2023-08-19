@@ -34,4 +34,3 @@ loginToDemoWebShop
     Input Text      id=Password     111111
     Click Element   class=button-1 login-button
     Sleep           10
-     cli
