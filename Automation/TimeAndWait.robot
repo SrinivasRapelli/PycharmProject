@@ -12,7 +12,7 @@ ${Browser}      Edge
 #    ByUsingSetSeleniumSpeed
 
 #WaitUntil
-#    ByUaingWaitUntil
+#    ByUsingWaitUntil
 
 ImplicitWait
     UsingImplicitWait
@@ -64,7 +64,7 @@ ByUsingSetSeleniumSpeed
     ${speed}    get selenium speed
     log to console  ${speed}
 
-ByUaingWaitUntil
+ByUsingWaitUntil
     open browser    ${Url}  ${Browser}
     maximize browser window
     set selenium timeout    10seconds
